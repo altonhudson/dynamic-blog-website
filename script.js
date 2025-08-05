@@ -83,11 +83,9 @@ const blogData = [
     
 ]
 
-
-localStorage.setItem("posts", JSON.stringify(blogData))
-
 const blogContainer = document.querySelector(".blog-container");
 
+if (localStorage.getItem('posts')){
 document.addEventListener("DOMContentLoaded", () => {
     const getData = localStorage.getItem("posts")
     const loadData = JSON.parse((getData))
@@ -132,8 +130,87 @@ document.addEventListener("DOMContentLoaded", () => {
         blogSnippet.textContent = data.snippet;
         blogSnippet.classList.add('blog-snippet');
         blogBlurbContainer.appendChild(blogSnippet)
+
+        const blogLink = document.createElement("a")
+        blogLink.textContent = "Read More!";
+        blogLink.href = "post.html"
+        blogLink.classList.add('blog-detail-link');
+        blogBlurbContainer.appendChild(blogLink)
+        let blogid = data.id
+
+        blogLink.addEventListener("click", (e) => {
+            localStorage.setItem("blogID", blogid)
+        })
     })
     
 })
+} else {
+    localStorage.setItem("posts", JSON.stringify(blogData))
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const getData = localStorage.getItem("posts")
+    const loadData = JSON.parse((getData))
+
+    loadData.forEach(data => {
+        const blogPostContainer = document.createElement("div");
+        blogPostContainer.classList.add("blog-post-container");
+        blogContainer.appendChild(blogPostContainer)
+
+        const blogImage = document.createElement("img");
+        blogImage.src = data.blogArt;
+        blogImage.alt = data.blogArtAlt;
+        blogImage.classList.add("blog-image");
+        blogPostContainer.appendChild(blogImage);
+
+        const blogBlurbContainer = document.createElement("div");
+        blogBlurbContainer.classList.add("blog-blurb-container");
+        blogPostContainer.appendChild(blogBlurbContainer)
+
+
+        const blogTitle = document.createElement("h4")
+        blogTitle.textContent = data.title;
+        blogTitle.classList.add('blog-title');
+        blogBlurbContainer.appendChild(blogTitle)
+
+        const blogAuthourContainer = document.createElement("div");
+        blogAuthourContainer.classList.add("blog-authour-container");
+        blogBlurbContainer.appendChild(blogAuthourContainer)
+
+        const blogAuthourImage = document.createElement("img");
+        blogAuthourImage.src = data.authour.avatar;
+        blogAuthourImage.classList.add("blog-authour-image");
+        blogAuthourContainer.appendChild(blogAuthourImage);
+
+        const blogAuthour = document.createElement("h6")
+        blogAuthour.textContent = data.authour.name;
+        blogAuthour.classList.add('blog-authour');
+        blogAuthourContainer.appendChild(blogAuthour)
+
+
+        const blogSnippet = document.createElement("p")
+        blogSnippet.textContent = data.snippet;
+        blogSnippet.classList.add('blog-snippet');
+        blogBlurbContainer.appendChild(blogSnippet)
+
+        const blogLink = document.createElement("a")
+        blogLink.textContent = "Read More!";
+        blogLink.href = "post.html"
+        blogLink.classList.add('blog-detail-link');
+        blogBlurbContainer.appendChild(blogLink)
+        let blogid = data.id
+
+        blogLink.addEventListener("click", (e) => {
+            localStorage.setItem("blogID", blogid)
+        })
+    })
+    
+})
+}
+
+
+
+
+
+
 
 
