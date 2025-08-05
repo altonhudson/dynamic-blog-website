@@ -217,6 +217,13 @@ h1 {
   cursor: pointer;
 }
 
+.edit-post:hover,
+.cancel-post:hover, 
+.confirm-edit:hover, 
+.back-btn:hover {
+  background-color: #005fa3;
+}
+
 .delete-post {
   padding: 10px 16px;
   font-size: 14px;
@@ -226,14 +233,6 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
 }
-
-.edit-post:hover,
-.cancel-post:hover, 
-.confirm-edit:hover, 
-.back-btn:hover {
-  background-color: #005fa3;
-}
-
 
 .edit-post-container {
     display: none;
