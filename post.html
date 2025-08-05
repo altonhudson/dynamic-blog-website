@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG POST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>POSTS</h1>
+
+    <div class="post-container">
+        <h3 class="post-title"></h3>
+        <img src="" alt="" class="post-image">
+        <p class="post-content"></p>
+        <p>Tags: <span class="post-tags"></span></p>
+        <div class="button-container">
+        <button type="button" class="edit-post">Edit Post</button>
+        <button type="button" class="back-btn">Back</button>
+        </div>
+    </div>
+    <div class="edit-post-container">
+        <form action="">
+        <h3 class="post-title">Edit Post!</h3>
+        <div class="blog-title-input">
+            <label for="" class="blog-title-label"> </label>
+            <input class="edit-post-title" type="text" name="" id="" placeholder="Write New Title Here...">
+        </div>
+        <input type="file" id="imageUpload" placeholder="upload-image" accept="image/*">
+        <textarea class="edit-post-content" name="" id="" placeholder="Edit Post Here"></textarea>
+        <div class="blog-tag-input">
+        <label for="" class="blog-tag-label">Edit Blog Content</label>
+        <input class="edit-post-tags" type="text" name="" id="" placeholder="Edit Tags">
+        </div>
+        <div class="button-container">
+        <button type="button" class="cancel-post">Cancel</button>
+        <button type="button" class="confirm-edit">Confirm!</button>
+        </div>
+    </form>
+    </div>
+    <script src="post.js"></script>
+</body>
+</html>
