@@ -38,6 +38,15 @@ editPostBtn.addEventListener("click", (e) => {
     postContainer.classList.toggle("hide-content")
 })
 
+let deletePost = document.querySelector(".delete-post");
+deletePost.addEventListener("click", (e) => {
+    let removepost = posts.filter(post => post.id != getBlogId);
+
+    localStorage.setItem("posts", JSON.stringify(removepost))
+
+    window.location.href = 'index.html'
+})
+
 let cancelpostBtn = document.querySelector('.cancel-post')
 cancelpostBtn.addEventListener("click", (e) => {
     editPostContainer.classList.toggle("display-content")
