@@ -50,3 +50,50 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: darkgray;
 }
+
+h1 {
+    text-transform: uppercase
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid black;
+    margin: 0 50px;
+    padding: 25px 50px;
+
+}
+
+.blog-title-input {
+    margin-bottom: 10px;
+}
+
+textarea {
+  width: 80%;
+  height: 150px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: vertical; /* allows user to resize height only */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.blog-tag-input {
+    display: flex;
+    margin: 20px 0;
+}
+
+.blog-tag-input label {
+    margin-right: 5px;
+}
+
+.blog-tag-input input {
+    width: 100%;
+}
+
+.submit-post {
+    width: 10%
+}
