@@ -88,7 +88,7 @@ confirmEdit.addEventListener("click", (e) => {
                     postImg.src = imageUploaded;
                     saveAndRedirect();
                 };
-                reader.readAsDataURL(editBlogImg);
+                reader.readAsDataURL(blogImg);
             } else {
                 saveAndRedirect();
             }
