@@ -5,83 +5,82 @@ const blogData = [
         authour: {
             id: 100,
             name: "Alton Hudson",
-            avatar: "https://plus.unsplash.com/premium_photo-1674586421941-da5144495376?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            avatar: "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
-        content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit fugiat alias dolorum quaerat expedita cupiditate sequi exercitationem quas eaque, eveniet necessitatibus doloremque! Non illum cumque provident tempora repellat amet?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit fugiat alias dolorum quaerat expedita cupiditate sequi exercitationem quas eaque, eveniet necessitatibus doloremque! Non illum cumque provident tempora repellat amet?",
-        snippet: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit fugiat alias dolorum quaerat expedita cupiditate sequi exercitationem quas eaque, eveniet necessitatibus doloremque! Non illum cumque provident tempora repellat amet",
-        tags: ["Web Development", "AI", "Lorem"],
-        blogArt: "https://plus.unsplash.com/premium_photo-1680402879257-48ffbbc6db1d?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        timestamp: "04-08-2025",
-        blogArtAlt: "image description",  
+        content: "Web development is evolving rapidly with new frameworks, AI-driven tools, and more interactive web apps. In 2025, developers are increasingly focusing on accessibility, performance, and progressive web apps (PWAs) to meet modern user expectations. This article explores the top trends shaping the future of web development and what skills developers need to stay ahead.",
+        snippet: "Discover the top trends in web development for 2025, including AI-driven tools, accessibility improvements, and progressive web apps.",
+        tags: ["Web Development", "AI", "PWAs"],
+        blogArt: "https://images.unsplash.com/photo-1561883088-039e53143d73?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        timestamp: "08-13-2025",
+        blogArtAlt: "Futuristic web development concept",
         readingTime: "6 mins",
         comments: [
             {
                 id: 200,
                 author: "Jane Doe",
-                content: "Wow So Cool",
-                timestamp: "04-08-2025"
+                content: "Great insights! Really excited about AI in web dev.",
+                timestamp: "08-13-2025"
             }
         ],
         isPosted: true,
-        views: 123,
-        likes: 100   
+        views: 1234,
+        likes: 210
     },
-        {
+    {
         id: 2,
-        title: "Career Crashout",
+        title: "Navigating Tech Career Paths in 2025",
         authour: {
             id: 101,
             name: "Suban Osman",
-            avatar: "https://plus.unsplash.com/premium_photo-1682125082673-7ff82ab8c1fe?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            avatar: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=2670&auto=format&fit=crop"
         },
-        content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit fugiat alias dolorum quaerat expedita cupiditate sequi exercitationem quas eaque, eveniet necessitatibus doloremque! Non illum cumque provident tempora repellat amet?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit fugiat alias dolorum quaerat expedita cupiditate sequi exercitationem quas eaque, eveniet necessitatibus doloremque! Non illum cumque provident tempora repellat amet?",
-        snippet: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit fugiat alias dolorum quaerat expedita cupiditate sequi exercitationem quas eaque, eveniet necessitatibus doloremque! Non illum cumque provident tempora repellat amet",
-        tags: ["Career", "Job Market", "Lorem"],
-        blogArt: "https://plus.unsplash.com/premium_photo-1661645655246-802881a7b7e7?q=80&w=2696&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        blogArtAlt: "image description",
-        timestamp: "04-08-2025",
+        content: "The tech industry is constantly changing, and career paths are evolving. From software engineering to UX design, understanding growth areas and emerging roles is crucial. This article breaks down key opportunities, salary expectations, and skills to focus on for a successful tech career in 2025.",
+        snippet: "Explore evolving tech career paths, emerging roles, and skills needed to succeed in 2025.",
+        tags: ["Career", "Tech Jobs", "Industry Trends"],
+        blogArt: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2696&auto=format&fit=crop",
+        blogArtAlt: "Tech career concept illustration",
+        timestamp: "08-10-2025",
         readingTime: "10 mins",
         comments: [
             {
-                id: 200,
+                id: 201,
                 author: "John Derry",
-                content: "I disagree",
-                timestamp: "04-08-2025"
+                content: "Helpful guide! This clarified a lot about different tech roles.",
+                timestamp: "08-11-2025"
             }
         ],
         isPosted: true,
-        views: 456,
-        likes: 188   
+        views: 987,
+        likes: 176
     },
     {
         id: 3,
-        title: "Animals in Tech",
+        title: "How AI is Changing Everyday Life",
         authour: {
-            id: 101,
-            name: "Yoshi",
-            avatar: "https://images.unsplash.com/photo-1717501219599-653a991b25f6?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            id: 102,
+            name: "Yoshi Tanaka",
+            avatar: "https://images.unsplash.com/photo-1511044568932-338cba0ad803?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
-        content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit fugiat alias dolorum quaerat expedita cupiditate sequi exercitationem quas eaque, eveniet necessitatibus doloremque! Non illum cumque provident tempora repellat amet?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit fugiat alias dolorum quaerat expedita cupiditate sequi exercitationem quas eaque, eveniet necessitatibus doloremque! Non illum cumque provident tempora repellat amet?",
-        snippet: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit fugiat alias dolorum quaerat expedita cupiditate sequi exercitationem quas eaque, eveniet necessitatibus doloremque! Non illum cumque provident tempora repellat amet",
-        tags: ["Pets", "Animals", "Lorem"],
-        blogArt: "https://images.unsplash.com/photo-1686386084459-8d9d14400a4b?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        blogArtAlt: "image description",
-        timestamp: "04-08-2025",
-        readingTime: "15 mins",
+        content: "Artificial Intelligence is no longer just a futuristic concept. From smart assistants to AI-powered healthcare, AI is transforming how we live, work, and interact with technology. This post examines practical AI applications in 2025 and what we can expect in the near future.",
+        snippet: "AI is transforming our daily lives—from healthcare to smart assistants. Learn how it impacts us in 2025.",
+        tags: ["AI", "Technology", "Innovation"],
+        blogArt: "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?q=80&w=1620&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        blogArtAlt: "AI futuristic concept",
+        timestamp: "08-12-2025",
+        readingTime: "8 mins",
         comments: [
             {
-                id: 200,
+                id: 202,
                 author: "Mochi Mohamed",
-                content: "Cats Rule",
-                timestamp: "04-08-2025"
+                content: "Amazing overview! AI is everywhere these days.",
+                timestamp: "08-12-2025"
             }
         ],
         isPosted: true,
-        views: 1382,
-        likes: 800   
-    },
-    
-]
+        views: 1450,
+        likes: 325
+    }
+];
 
 const blogContainer = document.querySelector(".blog-container");
 
